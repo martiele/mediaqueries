@@ -1,0 +1,23 @@
+
+/* TABLET */
+
+main .content{
+    gap: 0px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+card{
+	width: calc(50% - 10px);
+	margin-bottom: 40px;
+}
+
+/* AGGIUSTO I COLORI PER RISPARMIARE INCHIOSTRO */
+
+.sec-bgcolor{ 
+	background-color: #FEFEFE; 
+}
+
+card{
+	background-color: #fefefe;
+}

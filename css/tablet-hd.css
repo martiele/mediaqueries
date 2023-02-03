@@ -1,0 +1,25 @@
+main .content{
+	justify-content: space-between;
+}
+
+card{
+	width: calc(25% - 10px);
+}
+
+
+card{
+	background-color: #00ff4e;
+}
+
+
+
+
+
+
+/* ALLINEO LAST A SINISTRA */
+/*
+card:last-child{
+	margin-right: auto;
+	margin-left: 14px;
+}
+*/

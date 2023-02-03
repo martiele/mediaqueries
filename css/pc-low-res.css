@@ -1,0 +1,42 @@
+
+main .content{
+    gap: 20px;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: initial;
+}
+card{
+	width: 100%;
+	margin-bottom: 0px;
+
+	flex-direction: row;
+	align-items: center;
+}
+
+/* alternate */
+card:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+cardhead{
+	width: calc(100vw / 3);
+}
+cardbody{
+	width: calc(100vw / 3 * 2);
+}
+
+cardhead img {
+    display: block;
+}
+
+cardbody{
+	text-align: left;
+}
+card:nth-child(even) cardbody{
+	text-align: right;
+}
+
+
+card{
+	background-color: #e5ff00;
+}
