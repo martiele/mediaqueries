@@ -8,12 +8,13 @@ main .content{
 }
 card{
 	flex-direction: column;
-	background-color: lightblue;
 }
 cardbody{
 	text-align: center;
 }
 
 
-
-
+/* COLORE CARDS */
+card{
+	background-color: lightblue;
+}

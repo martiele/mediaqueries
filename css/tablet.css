@@ -16,3 +16,8 @@ card{
 card{
 	background-color: #00fffe;
 }
+/*
+card:nth-child(4n), card:nth-child(4n-1){
+	background-color: #ff00d263;
+}
+*/
