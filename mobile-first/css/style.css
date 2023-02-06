@@ -1,0 +1,126 @@
+/*
+@import url(base.css) all;
+@import url(tablet.css) screen and (min-width: 650px);
+@import url(tablet-hd.css) screen and (min-width: 980px);
+@import url(pc-low-res.css) screen and (min-width:1024px);
+@import url(pc-high-res.css) screen and (min-width:1200px);
+@import url(print.css) print;
+*/
+
+
+
+
+
+
+
+/* COMMON */
+h2{ font-size: 26px; }
+h3{ font-size: 24px; }
+h4{ font-size: 22px; }
+.txt-bigger{ font-size: 18px; line-height:24px; }
+.m-2{ margin: 2em; }
+.mt-1{ margin-top: 0.5em; }
+.mt-2{ margin-top: 2em; }
+.mb-4{ margin-bottom: 4em; }
+.upper{	text-transform: uppercase; }
+.bold{ font-weight: bold; }
+.txt-center{ text-align: center; }
+.sec-bgcolor{ background-color: #07ff00; }
+.flex-container{ display: flex; }
+img{ width: 100%; }
+
+
+/* HEADER */
+header{
+	padding: 40px 0px;
+}
+
+/* MAIN */
+main{
+	margin: 50px 0px;
+}
+card{
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.7)
+}
+cardbody{
+	padding:10px 30px;
+}
+cardbody h4{
+	margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+	padding: 20px;
+}
+
+
+
+/* MOBILE FIRST - REGOLE DI BASE */
+
+main .content{
+	margin: 20px;
+	gap: 20px;
+	flex-direction: column;
+}
+card{
+	flex-direction: column;
+	background-color: red;
+}
+cardbody{
+	text-align: center;
+}
+
+/* Regole per Tablet: da 768 in su.... */
+@media screen and (min-width: 768px){
+	main .content{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	card{
+		width: calc(100% / 2 - 20px);
+		background-color: yellow;
+	}
+}
+
+
+/* Regole per PC: da 992 in su.... */
+@media screen and (min-width: 992px){
+	card{
+		width: calc(100% / 4 - 20px);
+		background-color: orange;
+	}
+}
+
+
+/* Regole per PC WIDE: da 1200 in su.... */
+@media screen and (min-width: 1200px){
+	main{
+		max-width: 1200px;
+		margin: 0px auto;
+	}
+	body{
+		background-image: url(../img/bg.jpg);
+		background-repeat: repeat;
+	}
+}
+
+@media print{
+	header, footer{
+		display: none;
+	}
+	.sec-bgcolor{ background-color: #FFFFFF; }
+	main .content{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	card{
+		width: calc(100% / 2 - 20px);
+		background-color: yellow;
+	}
+
+}
+
+

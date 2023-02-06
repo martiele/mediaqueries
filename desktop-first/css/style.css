@@ -1,0 +1,108 @@
+/* COMMON */
+h2{ font-size: 26px; }
+h3{ font-size: 24px; }
+h4{ font-size: 22px; }
+.txt-bigger{ font-size: 18px; line-height:24px; }
+.m-2{ margin: 2em; }
+.mt-1{ margin-top: 0.5em; }
+.mt-2{ margin-top: 2em; }
+.mb-4{ margin-bottom: 4em; }
+.upper{	text-transform: uppercase; }
+.bold{ font-weight: bold; }
+.txt-center{ text-align: center; }
+.sec-bgcolor{ background-color: lightgray; }
+.flex-container{ display: flex; }
+img{ width: 100%; }
+
+/* HEADER */
+header{
+	padding: 40px 0px;
+}
+
+/* MAIN */
+main{
+	margin: 50px 0px;
+}
+card{
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.7)
+}
+cardbody{
+	padding:10px 30px;
+}
+cardbody h4{
+	margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+	padding: 20px;
+}
+
+
+
+/* DESKTOP FIRST - REGOLE DI BASE */
+
+main .content{
+	margin: 20px;
+	gap: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+card{
+	width: calc(100% / 2 - 30px);
+	flex-direction: row;
+	align-items: center;
+}
+cardhead{
+	width: calc(100% / 3);
+}
+cardhead img{
+	display: block;
+}
+cardbody{
+	width: calc(100% / 3 * 2);
+}
+card{
+	/* colore cards */
+	background-color: lightblue;
+	border-radius: 30px;
+}
+
+
+/* PC Desktop inferiori a 1200px */
+@media screen and (max-width: 1200px){
+	card{
+		width: 100%;
+		background-color: bisque;
+		border-radius: 0px;
+	}
+
+}
+
+@media screen and (max-width: 1200px) and (min-width:993px){
+	card:nth-child(even){
+		background-color: aqua;
+	}
+}
+
+
+
+/* Per tablet 992 */
+@media screen and (max-width: 992px){
+	main .content{
+		gap: 20px;
+	}
+
+	card{
+		width: calc(100% / 2 - 20px);
+
+		flex-direction: column;
+		background-color: pink;
+	}
+	
+	cardhead{
+		width: 100%;	
+	}
+
+}
